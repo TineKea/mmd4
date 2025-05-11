@@ -1,8 +1,8 @@
 ---
-const {header2, text} = Astro.props;
+const {header2} = Astro.props;
 ---
 
 <div>
     <h2>{header2}</h2>
-    <p>{text}</p>
+    <slot/>
 </div>
