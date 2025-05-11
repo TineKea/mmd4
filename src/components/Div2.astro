@@ -2,7 +2,37 @@
 const {header2} = Astro.props;
 ---
 
-<div>
+<div class="container">
     <h2>{header2}</h2>
     <slot/>
 </div>
+
+<style>
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #28a745;               /* Grøn tekst */
+  border: 2px solid #28a745;    /* Grøn kant */
+  border-radius: 999px;         /* Oval form */
+  text-decoration: none;        /* Fjern understregning */
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.oval-link:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+
+</style>

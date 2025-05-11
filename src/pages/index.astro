@@ -1,5 +1,4 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/navigation.astro';
 import Div1 from '../components/Div1.astro';
 import Div2 from '../components/Div2.astro';
@@ -46,6 +45,20 @@ import Footer from '../components/Footer.astro';
 <img src="#" alt="billede af studenrende">
 <p>Som elev på NEG Kalundborg får du en uddannelse med fokus på både faglighed og fællesskab. Du udvikler dine praktiske evner, opbygger værdifuld erfaring og får adgang til stærke erhvervsnetværk. Du bliver en del af et inspirerende miljø, hvor der er plads til at vokse – både personligt og professionelt. Her lægger vi vægt på, at du trives, bliver udfordret og er klar til fremtiden.</p>
 			</Div2>
+
+<Div2>
+	<div>
+		<img src="/legat.webp" alt="2030 legaet">
+	</div>
+	<div>
+		<h2>Du kan få 2.030 kr. om måneden i op til 12 måneder</h2>
+	<p>Hvis du er mellem 16 og 30 år, er udeboende i Region Sjælland og tager en teknisk uddannelse på NEG Kalundborg, så kan du få Andels legat. Legatet er på 2.030 kr. om måneden, og du kan få det i op til 12 måneder (6 måneder på grundforløb 2 og de første 6 måneder af din læreplads på hovedforløbet).</p>
+	<p>Formålet med legatet er at højne uddannelsesniveau og styrke forudsætninger for vækst og beskæftigelse i Region Sjælland for dem, som vi mener kan gøre en forskel i den grønne omstilling.</p>
+
+	<a href="https://andel.dk/legat/" target="_blank" class="green-button">Ansøg nu</a>
+	</div>
+	
+</Div2>
 		</main>
 
 		<footer> 
@@ -53,3 +66,20 @@ import Footer from '../components/Footer.astro';
 		</footer>
 	</body>
 </html>
+
+<style>
+	.green-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #EC8113;     /* Grøn baggrund */                
+  border: 2px solid #003732;     /* Samme farve som baggrund */
+  border-radius: 999px;          /* Oval form */
+  text-decoration: none;         /* Fjern understregning */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.green-button:hover {
+  background-color: #003732;     /* Mørkere grøn ved hover */
+}
+</style>
