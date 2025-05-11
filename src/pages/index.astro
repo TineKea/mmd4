@@ -1,11 +1,35 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/navigation.astro';
+import Div1 from '../components/Div1.astro';
+import Div2 from '../components/Div2.astro';
+import Footer from '../components/Footer.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="da">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>MMD NEG kalundborg</title>
+	</head>
+	<body>
+		<header>
+<Navigation> </Navigation>
+<embed src="hero video med ae logo" type="video">
+		</header>
+
+		<main>
+			<Div1 overskrift="NEG kalundborg" underrubrik="lorem impsum dollar"> </Div1>
+
+			<Div2 header2="hej verden" text="tine simus"></Div2>
+
+			<Div2 header2="sutte" text="kattemissen"></Div2>
+		</main>
+
+		<footer> 
+			<Footer></Footer>
+		</footer>
+	</body>
+</html>
