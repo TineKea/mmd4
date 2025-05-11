@@ -1,0 +1,29 @@
+body {
+  background-color: #081b49;
+}
+
+p {
+  color: #f3ece6;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: regular;
+}
+
+h1 {
+  color: #f3ece6;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2,
+h3,
+a {
+  color: #f3ece6;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: medium;
+}
