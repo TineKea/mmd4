@@ -1,85 +1,148 @@
 ---
 import Navigation from '../components/navigation.astro';
 import Div1 from '../components/Div1.astro';
-import Div2 from '../components/Div2.astro';
 import Footer from '../components/Footer.astro';
-
 ---
 
 <html lang="da">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>MMD NEG kalundborg</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-<Navigation> 
-	<embed src="hero video med ae logo" type="video" alt="video">
-</Navigation>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>MMD NEG kalundborg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <Navigation><embed src="hero video med ae logo" type="video" alt="video" /></Navigation>
+    </header>
 
-		</header>
+    <main>
+      <Div1 overskrift="NEG kalundborg" underrubrik="NEG Kalundborg er en moderne erhvervsskole med fokus på praksisnær undervisning og stærke erhvervssamarbejder. Her uddannes fremtidens faglærte inden for blandt andet teknologi, industri og byggeri. Skolen tilbyder et inspirerende læringsmiljø med plads til både faglig og personlig udvikling. Vi bygger bro mellem uddannelse og arbejdsmarked – til gavn for både elever og erhvervsliv."></Div1>
 
-		<main>
-			<Div1 overskrift="NEG kalundborg" underrubrik="NEG Kalundborg er en moderne erhvervsskole med fokus på praksisnær undervisning og stærke erhvervssamarbejder. Her uddannes fremtidens faglærte inden for blandt andet teknologi, industri og byggeri. Skolen tilbyder et inspirerende læringsmiljø med plads til både faglig og personlig udvikling. Vi bygger bro mellem uddannelse og arbejdsmarked – til gavn for både elever og erhvervsliv."> </Div1>
-<div>
-	<Div2 header2="EUX">
-		<p>EUX er en uddannelse, der kombinerer en erhvervsuddannelse med en gymnasial eksamen. Det betyder, at du både får praktiske færdigheder og en studentereksamen, som giver adgang til videregående uddannelser. EUX er for dig, der vil have det bedste fra begge verdener – hænderne i faget og hovedet med i bogen. Du kommer tæt på arbejdsmarkedet og får samtidig stærke boglige kompetencer.</p>
-	</Div2>
+      <div class="wrapper">
+        <div class="text">
+          <img class="logo" src="/neg_logo.webp" alt="NEG logo" />
+          <p>Som elev på NEG Kalundborg får du en uddannelse med fokus på både faglighed og fællesskab. Du udvikler dine praktiske evner, opbygger værdifuld erfaring og får adgang til stærke erhvervsnetværk. Du bliver en del af et inspirerende miljø, hvor der er plads til at vokse – både personligt og professionelt. Her lægger vi vægt på, at du trives, bliver udfordret og er klar til fremtiden.</p>
+        </div>
+        <img src="/guys_smilling.webp" alt="Billede af studerende" />
+      </div>
 
-	<div>
-		<img src="#" alt="midterstreg">
-	</div>
+      <div class="layout">
+        <div class="section">
+          <h2>EUX</h2>
+          <p>EUX er en uddannelse, der kombinerer en erhvervsuddannelse med en gymnasial eksamen. Det betyder, at du både får praktiske færdigheder og en studentereksamen, som giver adgang til videregående uddannelser. EUX er for dig, der vil have det bedste fra begge verdener – hænderne i faget og hovedet med i bogen.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h2>EUD</h2>
+          <p>EUD er en erhvervsuddannelse, hvor du lærer et fag fra bunden og bliver klar til at arbejde direkte efter endt uddannelse. Du får praktisk erfaring kombineret med teori, og størstedelen af uddannelsen foregår i virkelige virksomheder gennem praktik. EUD er for dig, der vil hurtigt i job og trives med at lære ved at gøre.</p>
+        </div>
+      </div>
 
-	<Div2 header2="EUD">
-		<p>EUD er en erhvervsuddannelse, hvor du lærer et fag fra bunden og bliver klar til at arbejde direkte efter endt uddannelse. Du får praktisk erfaring kombineret med teori, og størstedelen af uddannelsen foregår i virkelige virksomheder gennem praktik. EUD er for dig, der vil hurtigt i job og trives med at lære ved at gøre. Det er vejen til et håndværk, du kan være stolt af.</p>
-	</Div2>
-</div>
-	
-<Div2>
-<img src="#" alt="billede af studenrende">
-<p>Som elev på NEG Kalundborg får du en uddannelse med fokus på både faglighed og fællesskab. Du udvikler dine praktiske evner, opbygger værdifuld erfaring og får adgang til stærke erhvervsnetværk. Du bliver en del af et inspirerende miljø, hvor der er plads til at vokse – både personligt og professionelt. Her lægger vi vægt på, at du trives, bliver udfordret og er klar til fremtiden.</p>
-			</Div2>
+      <div class="wrapper">
+        <img src="/legat.webp" alt="2030 legatet" />
+        <div class="text">
+          <h2>Du kan få 2.030 kr. om måneden i op til 12 måneder</h2>
+          <p>Hvis du er mellem 16 og 30 år, er udeboende i Region Sjælland og tager en teknisk uddannelse på NEG Kalundborg, så kan du få Andels legat. Legatet er på 2.030 kr. om måneden, og du kan få det i op til 12 måneder.</p>
+          <p>Formålet med legatet er at højne uddannelsesniveau og styrke forudsætninger for vækst og beskæftigelse i Region Sjælland for dem, som vi mener kan gøre en forskel i den grønne omstilling.</p>
+          <a href="https://andel.dk/legat/" target="_blank" class="green-button">Ansøg nu</a>
+        </div>
+      </div>
+    </main>
 
-<Div2>
-	<div>
-		<img src="/legat.webp" alt="2030 legaet">
-	</div>
-	<div>
-		<h2>Du kan få 2.030 kr. om måneden i op til 12 måneder</h2>
-	<p>Hvis du er mellem 16 og 30 år, er udeboende i Region Sjælland og tager en teknisk uddannelse på NEG Kalundborg, så kan du få Andels legat. Legatet er på 2.030 kr. om måneden, og du kan få det i op til 12 måneder (6 måneder på grundforløb 2 og de første 6 måneder af din læreplads på hovedforløbet).</p>
-	<p>Formålet med legatet er at højne uddannelsesniveau og styrke forudsætninger for vækst og beskæftigelse i Region Sjælland for dem, som vi mener kan gøre en forskel i den grønne omstilling.</p>
-
-	<a href="https://andel.dk/legat/" target="_blank" class="green-button">Ansøg nu</a>
-	</div>
-	
-</Div2>
-		</main>
-
-		<footer> 
-			<Footer></Footer>
-		</footer>
-	</body>
+    <footer><Footer /></footer>
+  </body>
 </html>
 
 <style>
-	.green-button {
+.green-button {
   display: inline-block;
   padding: 10px 25px;
-  background-color: #EC8113;     /* Grøn baggrund */                
-  border: 2px solid #003732;     /* Samme farve som baggrund */
-  border-radius: 999px;          /* Oval form */
-  text-decoration: none;         /* Fjern understregning */
+  background-color: #EC8113;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+.green-button:hover { background-color: #003732; }
 
-.green-button:hover {
-  background-color: #003732;     /* Mørkere grøn ved hover */
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.section {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+.section h2 { text-align: center; }
+.section p { text-align: left; }
+.divider { width: 50px; height: 100px; }
+
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+  }
+  .section { width: 30%; margin-bottom: 0; padding: 0; }
+  .divider { width: 2px; height: auto; background-color: #ccc; }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .wrapper > img { width: 50%; }
+  .text {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
 }
 </style>
