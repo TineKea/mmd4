@@ -1,9 +1,62 @@
 ---
-const { header2 } = Astro.props;
+const { brødtekst, image, alt } = Astro.props;
 ---
-
-<div class="container">
-  <h2>{header2}</h2>
-  <slot>
+<div class="wrapper">
+  <div class="text">
+    <p>{brødtekst}</p>
   </div>
+  <img src={image} alt={alt} />
 </div>
+
+
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  @media (max-width: 767px) {
+    .text {
+      text-align: left;
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .wrapper > img {
+      width: 50%;
+    }
+
+    .text {
+      width: 50%;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+</style>

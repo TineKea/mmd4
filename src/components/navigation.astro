@@ -1,15 +1,57 @@
-<div>
-    <figure>
-        <img src="#" alt="NEG kalundborg logo">
-    </figure>
-</div>
+<html lang="da">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Space Grotesk', sans-serif; margin-top: 60px; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: fixed; top: 0; width: 100%; background: transparent; z-index: 1000; }
+    .nav-section { display: flex; align-items: center; }
+    .socials { display: flex; gap: 20px; }
+    .socials img, .burger { height: 30px; cursor: pointer; }
+    .logo { height: 50px; }
+    .burger.hidden { display: none; }
+    .menu-slide { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem; z-index: 1000; border-radius: 8px; width: 260px; max-height: 80vh; overflow-y: auto; flex-direction: column; gap: 1rem; }
+    .menu-slide.open { display: flex; }
+    .close-btn { align-self: flex-end; font-size: 1.3rem; font-weight: bold; background: none; border: none; cursor: pointer; margin-bottom: 0.5rem; }
+    .menu-item { font-weight: 500; cursor: pointer; }
+    .submenu { display: none; margin-left: 1rem; flex-direction: column; }
+    .submenu a { color: #333; padding: 4px 0; text-decoration: none; }
+    .submenu a:hover { text-decoration: underline; }
+    .submenu.open { display: flex; }
+    @media (max-width: 768px) { .socials { display: none; } }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.burger'), menu = document.querySelector('.menu-slide'), closeBtn = document.querySelector('.close-btn');
+      burger.addEventListener('click', () => { menu.classList.add('open'); burger.classList.add('hidden'); });
+      closeBtn.addEventListener('click', () => { menu.classList.remove('open'); burger.classList.remove('hidden'); });
+      document.addEventListener('click', (e) => { if (!menu.contains(e.target) && !burger.contains(e.target)) { menu.classList.remove('open'); burger.classList.remove('hidden'); } });
+      document.querySelectorAll('.menu-item').forEach(item => item.addEventListener('click', () => item.nextElementSibling?.classList.toggle('open')));
+    });
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="nav-section"><a href="/"><img src="/neg_logo.webp" alt="NEG logo" class="logo" /></a></div>
+    <div class="nav-section center">
+      <div class="socials">
+        <a href="https://www.instagram.com/negkalundborg/" target="_blank"><img src="/Instagram.webp" alt="Instagram" /></a>
+        <a href="https://www.facebook.com/NEGKalundborg/" target="_blank"><img src="/Facebook.webp" alt="Facebook" /></a>
+        <a href="https://www.youtube.com/user/eucnvsdk" target="_blank"><img src="/Youtube2.webp" alt="YouTube" /></a>
+      </div>
+    </div>
+    <div class="nav-section"><img src="/menu.webp" alt="Menu" class="burger" /></div>
+  </nav>
 
-<div>
-     <a href="instagram"><img src=".../public/Instagram_logo.webp" alt="instagram logo"></a>
-     <a href="Facebook"><img src=".../public/facebook_logo.webp" alt="facebook logo"></a>
-     <a href="Youtube"><img src=".../public/youtube_logo.webp" alt="youtube logo"></a>
-</div>
-
-<div>
-    </slot>
-</div>
+  <div class="menu-slide">
+    <button class="close-btn">×</button>
+    <div><div class="menu-item">EUD</div><div class="submenu"><a href="/elektriker">Elektriker</a><a href="/tomrer">Tømrer</a><a href="/lager-terminal">Lager og terminalmedarbejder</a><a href="/produktor">Produktør</a><a href="/industrioperator">Industrioperatør</a><a href="/procesoperator">Procesoperatør</a><a href="/business">EUD Business</a></div></div>
+    <div><div class="menu-item">EUX</div><div class="submenu"><a href="/eux-elektriker">EUX Elektriker</a><a href="/eux-tomrer">EUX Tømrer</a><a href="/eux-procesoperator">EUX Procesoperatør</a><a href="/eux-business">EUX Business</a></div></div>
+    <div><div class="menu-item">Gymnasiet</div><div class="submenu"><a href="/hhx">HHX</a><a href="/htx">HTX</a></div></div>
+    <div><div class="menu-item">For Elever</div><div class="submenu"><a href="/opstart-introforlob">Opstart og introforløb</a><a href="/det-sociale-miljoe">Det sociale miljø</a><a href="/adgangskrav-optagelse">Adgangskrav og optagelse</a><a href="/studievejledning">Studievejledning</a><a href="/it-service">IT-service</a></div></div>
+    <div><div class="menu-item">For Forældre</div><div class="submenu"><a href="/opstart-introforlob">Opstart og introforløb</a><a href="/det-sociale-miljoe">Det sociale miljø</a><a href="/adgangskrav-optagelse">Adgangskrav og optagelse</a><a href="/studievejledning">Studievejledning</a><a href="/samarbejde-erhvervslivet">Samarbejde med erhvervslivet</a><a href="/it-service">IT-service</a></div></div>
+    <div><div class="menu-item">Om Skolen</div><div class="submenu"><a href="/opstart-introforlob">Opstart og introforløb</a><a href="/om-neg">Om NEG</a><a href="/det-sociale-miljoe">Det sociale miljø</a><a href="/kalender">Kalender</a><a href="/adgangskrav-optagelse">Adgangskrav og optagelse</a><a href="/studievejledning">Studievejledning</a><a href="/it-service">IT-service</a></div></div>
+  </div>
+</body>
+</html>
