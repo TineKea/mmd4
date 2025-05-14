@@ -1,0 +1,34 @@
+---
+const { src = "/Eletriker_hero.webp", alt = "Hero image" } = Astro.props;
+---
+
+<div class="hero">
+  <img src={src} alt={alt} />
+</div>
+
+<style>
+  .hero {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    .hero {
+      height: auto;
+    }
+
+    .hero img {
+      height: auto;
+      object-fit: contain;
+      max-height: 100vh;
+    }
+  }
+</style>

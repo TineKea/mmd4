@@ -2,7 +2,8 @@
 import Navigation from '../components/navigation.astro';
 import Div1 from '../components/Div1.astro';
 import Footer from '../components/Footer.astro';
-import Div2 from '../components/Div2.astro';
+import Legat from '../components/Legat.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <html lang="da">
@@ -23,6 +24,11 @@ import Div2 from '../components/Div2.astro';
     </header>
 
     <main>
+      
+
+<Hero src="/index_hero.webp" alt="Smilende elever på NEG Kalundborg" />
+
+
       <Div1 overskrift="NEG kalundborg" underrubrik="NEG Kalundborg er en moderne erhvervsskole med fokus på praksisnær undervisning og stærke erhvervssamarbejder. Her uddannes fremtidens faglærte inden for blandt andet teknologi, industri og byggeri. Skolen tilbyder et inspirerende læringsmiljø med plads til både faglig og personlig udvikling. Vi bygger bro mellem uddannelse og arbejdsmarked – til gavn for både elever og erhvervsliv."></Div1>
 
       <div class="wrapper">
@@ -45,15 +51,7 @@ import Div2 from '../components/Div2.astro';
         </div>
       </div>
 
-      <div class="wrapper">
-        <img src="/legat.webp" alt="2030 legatet" />
-        <div class="text">
-          <h2>Du kan få 2.030 kr. om måneden i op til 12 måneder</h2>
-          <p>Hvis du er mellem 16 og 30 år, er udeboende i Region Sjælland og tager en teknisk uddannelse på NEG Kalundborg, så kan du få Andels legat. Legatet er på 2.030 kr. om måneden, og du kan få det i op til 12 måneder.</p>
-          <p>Formålet med legatet er at højne uddannelsesniveau og styrke forudsætninger for vækst og beskæftigelse i Region Sjælland for dem, som vi mener kan gøre en forskel i den grønne omstilling.</p>
-          <a href="https://andel.dk/legat/" target="_blank" class="green-button">Ansøg nu</a>
-        </div>
-      </div>
+      <Legat></Legat>
     </main>
 
     <footer><Footer /></footer>
@@ -61,16 +59,6 @@ import Div2 from '../components/Div2.astro';
 </html>
 
 <style>
-.green-button {
-  display: inline-block;
-  padding: 10px 25px;
-  background-color: #EC8113;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.green-button:hover { background-color: #003732; }
 
 .layout {
   display: flex;

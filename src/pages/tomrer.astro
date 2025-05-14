@@ -1,0 +1,102 @@
+---
+import Footer from "../components/Footer.astro"
+import Div1 from "../components/Div1.astro"
+import Legat from "../components/Legat.astro"
+import Hero from "../components/Hero.astro"
+import Navigation from "../components/navigation.astro"
+---
+<html lang="da">
+   <meta charset="utf-8" />
+  <head><title>EUD Elektriker</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    </head>
+  <body>
+    <header>
+      <Navigation>
+    </Navigation>
+    </header>
+    
+    <main>
+      
+<Hero src="/Eletriker_hero.webp" alt="Elektriker på arbejde" />
+
+
+      <Div1 overskrift="Vil du bygge med mening? Bliv tømrer" underrubrik= "Drømmer du om at bygge noget, der holder i mange år? Tømreruddannelsen på EUD-niveau er for dig, der vil arbejde med hænderne, bruge værktøj og skabe bygninger, der giver mening. Du lærer at arbejde med træ, konstruktioner, tage, vægge og meget mere – både med klassiske teknikker og moderne metoder. Uddannelsen varer omkring 4 år og veksler mellem skole og praktik, hvor du får erfaring og løn. Som tømrer får du et solidt håndværk, stærke jobmuligheder og en uddannelse, du altid kan bygge videre på."></Div1>
+
+<div class="wrapper">
+        <div class="text">
+          <img class="logo" src="/neg_logo.webp" alt="NEG logo" />
+          <p>Tømreruddannelsen på EUD-niveau er for dig, der elsker at arbejde med hænderne, skabe noget synligt og bruge værktøj og materialer til at bygge og renovere.</p>
+          <br>
+          <p>Som tømrer er du med til at forme både private hjem og store erhvervsbyggerier. Du lærer at arbejde med træ, tagkonstruktioner, vægge, gulve og facader, samt hvordan man arbejder præcist og effektivt med byggeteknikker og materialer. Du får en solid forståelse for byggematerialer, sikkerhed, tegninger og samarbejde på byggepladsen.</p>
+          <br>
+          <p>Du starter med et grundforløb, hvor du får indblik i faget, og senere specialiserer du dig i de områder, der interesserer dig mest – fx boligbyggeri, industribyggelse eller renovering. Som tømrer er der stor efterspørgsel på dine færdigheder, og du kan vælge at arbejde som faglært eller videreuddanne dig til specialer som projektleder eller byggeleder. </p>
+          <br>
+            <p>Tømreruddannelsen giver dig ikke kun praktiske færdigheder, men også en stabil og fremtidssikret karriere med masser af muligheder for både udvikling og jobmuligheder.</p>
+        </div>
+        <img src="/guys_smilling.webp" alt="Billede af studerende" />
+      </div>
+
+<Legat>
+    </main>
+
+    <footer>
+      <Footer></Footer>
+    </footer>
+  </body>
+</html>
+
+<style>
+   .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .wrapper > img { width: 50%; }
+  .text {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+</style>

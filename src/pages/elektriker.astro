@@ -1,0 +1,104 @@
+---
+import Footer from "../components/Footer.astro"
+import Div1 from "../components/Div1.astro"
+import Legat from "../components/Legat.astro"
+import Hero from "../components/Hero.astro"
+import Navigation from "../components/navigation.astro"
+---
+<html lang="da">
+   <meta charset="utf-8" />
+  <head><title>EUD Elektriker</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    </head>
+  <body>
+    <header>
+      <Navigation>
+    </Navigation>
+    </header>
+    
+    <main>
+      
+<Hero src="/Eletriker_hero.webp" alt="Elektriker på arbejde" />
+
+
+      <Div1 overskrift="Bliv elektriker og få en uddannelse med fremtid i" underrubrik=" Kan du lide at bruge hænderne, løse opgaver og se resultaterne af dit arbejde med det samme? Som elektriker arbejder du med strøm, installationer og smarte løsninger, der gør en forskel i hverdagen og i fremtiden. På NEG Kalundborg får du en praktisk uddannelse med masser af muligheder. Du lærer både det tekniske og det kreative – og du kommer hurtigt ud i virkelige virksomheder, hvor du får erfaring og netværk. Elektrikeruddannelsen er perfekt for dig, der gerne vil hurtigt i gang med noget, der giver mening – og som åbner døre. Bagefter kan du vælge at gå direkte i job eller bygge videre med en specialisering eller videreuddannelse. Hos os får du et godt studiemiljø, dygtige undervisere og en uddannelse, der rykker. Klar til at tænde for din fremtid?"></Div1>
+
+<div class="wrapper">
+        <div class="text">
+          <img class="logo" src="/neg_logo.webp" alt="NEG logo" />
+          <p>Elektrikeruddannelsen på EUD-niveau er for dig, der gerne vil bruge hænderne, tænke teknisk og arbejde med el, energi og moderne teknologi. </p>
+          <br>
+          <p>Som elektriker er du med til at få lys, strøm og netværk til at fungere i alt fra huse og lejligheder til butikker, skoler og store fabrikker. Du lærer at lave elinstallationer, fejlfinde på elektriske anlæg og arbejde med intelligente løsninger som smart homes, solceller og elbil-ladere. Undervejs får du en solid forståelse for el-teknik, sikkerhed, tegninger og hvordan man arbejder professionelt og effektivt som håndværker.</p>
+          <br>
+          <p>Uddannelsen varer typisk 4 til 4½ år og veksler mellem skoleforløb på NEG Kalundborg og praktik i en virksomhed. Du kommer altså hurtigt ud og prøver faget i virkeligheden – og får løn under praktikken. På skolen lærer du, hvordan man installerer og vedligeholder elektriske systemer, arbejder med strøm på en sikker måde og bruger værktøj, måleudstyr og el-tegninger. Du lærer også at tænke i løsninger og samarbejde med kunder og kolleger. </p>
+          <br>
+          <p>Du starter med et grundforløb, hvor du bliver introduceret til faget. Derefter kommer du i praktik og vælger en retning, der passer til dine interesser – for eksempel installation i boliger, teknik i industrien eller arbejde med netværk og kommunikation. Som elektriker får du mange muligheder. Der er stor efterspørgsel på elektrikere, og når du er udlært, kan du arbejde i mange forskellige brancher – eller videreuddanne dig, hvis du vil specialisere dig endnu mere. </p>
+          <br>
+          <p>Kort sagt: Elektrikeruddannelsen er for dig, der vil have en praktisk og fremtidssikret uddannelse med masser af teknik, udvikling og karrieremuligheder.</p>
+        </div>
+        <img src="/Eletriker_dreng.webp" alt="Dreng der arbejder med ledninger" />
+      </div>
+
+<Legat>
+    </main>
+
+    <footer>
+      <Footer></Footer>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .wrapper > img { width: 50%; }
+  .text {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+</style>
