@@ -5,15 +5,18 @@ import Legat from "../components/Legat.astro"
 import Hero from "../components/Hero.astro"
 import Navigation from "../components/navigation.astro"
 ---
+
 <html lang="da">
    <meta charset="utf-8" />
-  <head><title>EUD Elektriker</title>
+  <head>
+    <title>Lager og terminalmedarbejder | NEG</title>
   <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
     </head>
   <body>
+
     <header>
       <Navigation>
     </Navigation>
@@ -21,10 +24,24 @@ import Navigation from "../components/navigation.astro"
     
     <main>
       
-<Hero src="/Eletriker_hero.webp" alt="Elektriker på arbejde" />
+<Hero src="/Lager_hero.webp" alt="lager medarbejder på arbejde" />
 
 
-      <Div1 overskrift="Bliv lager medarbejder" underrubrik=" Kan du lide at bruge hænderne, løse opgaver og se resultaterne af dit arbejde med det samme? Som elektriker arbejder du med strøm, installationer og smarte løsninger, der gør en forskel i hverdagen og i fremtiden. På NEG Kalundborg får du en praktisk uddannelse med masser af muligheder. Du lærer både det tekniske og det kreative – og du kommer hurtigt ud i virkelige virksomheder, hvor du får erfaring og netværk. Elektrikeruddannelsen er perfekt for dig, der gerne vil hurtigt i gang med noget, der giver mening – og som åbner døre. Bagefter kan du vælge at gå direkte i job eller bygge videre med en specialisering eller videreuddannelse. Hos os får du et godt studiemiljø, dygtige undervisere og en uddannelse, der rykker. Klar til at tænde for din fremtid?"></Div1>
+      <Div1 overskrift="Bliv en vigtig del af logistikken – vælg en fremtid som lager- og terminalmedarbejder" underrubrik="Er du til fart på hverdagen, ansvar og god stemning? På NEG Kalundborg kan du tage en erhvervsuddannelse som lager- og terminalmedarbejder, hvor du lærer at holde styr på varer, bruge smarte it-systemer og være en vigtig del af logistikken bag alt fra netbutikker til store virksomheder. Uddannelsen kombinerer hands-on erfaring med viden, der åbner døre til et væld af jobmuligheder – både nu og i fremtiden."></Div1>
+
+<div class="wrapper">
+        <div class="text">
+          <img class="logo" src="/neg_logo.webp" alt="NEG logo" />
+          <p>Som lager- og terminalmedarbejder bliver du en nøglespiller i at få varer frem til tiden. </p>
+          <br>
+          <p>Lager- og terminalmedarbejderen spiller en afgørende rolle i, at varer når sikkert og hurtigt frem – både i Danmark og internationalt. På NEG Kalundborg får du en erhvervsuddannelse med fokus på praksis, samarbejde og faglig udvikling. Du lærer at håndtere varer, bruge teknologiske systemer til lagerstyring, planlægge arbejdsopgaver og sikre en effektiv arbejdsgang. </p>
+          <br>
+          <p>Uddannelsen veksler mellem skole og oplæring i en virksomhed, så du får erfaring fra virkeligheden og indblik i de krav, branchen stiller. Du kommer tæt på moderne logistik, transportplanlægning og bæredygtige løsninger, og du opbygger kompetencer, som efterspørges bredt i både private og offentlige virksomheder.</p>
+          <br>
+          <p>Kort sagt en praktisk uddannelse med fart på, hvor du bliver en nøglespiller i fremtidens logistik.</p>
+        </div>
+        <img src="/Eletriker_dreng.webp" alt="lagermedarbejder" />
+      </div>
 
 <Legat>
     </main>
@@ -34,3 +51,55 @@ import Navigation from "../components/navigation.astro"
     </footer>
   </body>
 </html>
+
+<style>
+    .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .wrapper > img { width: 50%; }
+  .text {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+</style>

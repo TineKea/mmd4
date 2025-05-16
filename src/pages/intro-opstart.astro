@@ -1,0 +1,88 @@
+---
+import Navigation from '../components/navigation.astro';
+import Div1 from '../components/Div1.astro';
+import Footer from '../components/Footer.astro';
+import Legat from '../components/Legat.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Opstart og introforløb  NEG</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <Navigation>
+      </Navigation>
+    </header>
+
+    <main>
+      
+
+<Hero src="/index_hero.webp" alt="Smilende elever på NEG Kalundborg" />
+
+
+      <Div1 overskrift="NEG kalundborg" underrubrik="NEG Kalundborg er en moderne erhvervsskole med fokus på praksisnær undervisning og stærke erhvervssamarbejder. Her uddannes fremtidens faglærte inden for blandt andet teknologi, industri og byggeri. Skolen tilbyder et inspirerende læringsmiljø med plads til både faglig og personlig udvikling. Vi bygger bro mellem uddannelse og arbejdsmarked – til gavn for både elever og erhvervsliv."></Div1>
+
+
+<div class="intro_wrapper">
+  <h2 class="intro_title">Klar til start? Vi er klar til dig!</h2>
+  
+  <div class="intro_text">
+    <p>Når du starter på en ungdomsuddannelse hos NEG Kalundborg, er du ikke bare en elev i mængden – du bliver en del af et engageret og inspirerende fællesskab fra dag ét. Her prioriterer vi din trivsel og faglige udvikling lige højt. Vi skaber et trygt og nærværende studiemiljø, hvor du kan finde dig til rette, lære i dit eget tempo og være nysgerrig på dine fremtidsmuligheder. Din opstart skal ikke bare føles som en ny skole – den skal føles som et godt valg, du glæder dig til at være en del af.</p>
+
+<p>Allerede inden din første skoledag inviteres du til en opstartssamtale med en af vores erfarne studievejledere. Her tager vi os tid til at lære dig at kende og giver dig en grundig introduktion til både de faglige rammer og de sociale muligheder. Vi taler om dine forventninger og drømme – og hvordan vi sammen kan skabe det bedste forløb for dig. Derudover afholder vi inspirerende informationsaftener for både 10. klasse og GF1-elever, hvor du og dine forældre får et godt indblik i skolens hverdag, kan møde undervisere og stille alle de spørgsmål, I måtte have.</p>
+
+<blockquote>“Jeg var ret nervøs før opstart – men efter introaftenen vidste jeg bare: her hører jeg til.”<br>– Mads, elev på GF1</blockquote>
+
+<p>På din første rigtige skoledag starter vi ikke bare med skema og fag – vi starter med dig. Du deltager i et introforløb, der er skræddersyet til at gøre dig tryg og klar. Du bliver introduceret til skolens faciliteter, lærer dine undervisere at kende og møder dine medstuderende gennem fælles aktiviteter. Her får du hurtigt en følelse af, at du ikke er alene – og at skolen er et sted, hvor du både kan lære, være dig selv og udvikle dig i et støttende miljø.</p>
+
+<blockquote>“Det fedeste var, at vi lavede ting sammen fra dag ét. Det gjorde det meget nemmere at falde til.”<br>– Amina, EUD Business</blockquote>
+
+<p>Vi tror på, at du lærer bedst, når du trives – og derfor gør vi en aktiv indsats for at sikre et godt socialt og fagligt miljø. Vi har et stærkt fokus på fællesskab, samarbejde og praktiske øvelser, der gør undervisningen levende og relevant. Du får både støt
+  </div>
+</div>
+
+<Legat></Legat>
+    </main>
+
+    <footer><Footer /></footer>
+  </body>
+</html>
+
+<style>
+
+.intro_wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro_title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro_text {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f3ece6;
+}
+
+.intro_text blockquote {
+  font-style: italic;
+  align-content: center;
+  color: #f3ece6;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+}
+</style>

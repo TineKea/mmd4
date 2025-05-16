@@ -7,12 +7,14 @@ import Navigation from "../components/navigation.astro"
 ---
 <html lang="da">
    <meta charset="utf-8" />
-  <head><title>EUD Elektriker</title>
+  <head>
+    <title>EUD industrioperatør | NEG</title>
   <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
     </head>
+
   <body>
     <header>
       <Navigation>
@@ -24,7 +26,21 @@ import Navigation from "../components/navigation.astro"
 <Hero src="/Eletriker_hero.webp" alt="Elektriker på arbejde" />
 
 
-      <Div1 overskrift="Bliv tømrer" underrubrik=" Kan du lide at bruge hænderne, løse opgaver og se resultaterne af dit arbejde med det samme? Som elektriker arbejder du med strøm, installationer og smarte løsninger, der gør en forskel i hverdagen og i fremtiden. På NEG Kalundborg får du en praktisk uddannelse med masser af muligheder. Du lærer både det tekniske og det kreative – og du kommer hurtigt ud i virkelige virksomheder, hvor du får erfaring og netværk. Elektrikeruddannelsen er perfekt for dig, der gerne vil hurtigt i gang med noget, der giver mening – og som åbner døre. Bagefter kan du vælge at gå direkte i job eller bygge videre med en specialisering eller videreuddannelse. Hos os får du et godt studiemiljø, dygtige undervisere og en uddannelse, der rykker. Klar til at tænde for din fremtid?"></Div1>
+      <Div1 overskrift="Tag styringen i industrien – bliv industrioperatør med fremtiden i hænderne" underrubrik=" Vil du være den, der holder hjulene i gang i store produktionsanlæg og avanceret industri? På NEG Kalundborg kan du tage en erhvervsuddannelse som industrioperatør, hvor du lærer at styre og optimere produktionen i alt fra fødevarefabrikker til den højteknologiske medicinalindustri. Du arbejder med både maskiner, processtyring og kvalitet – og bliver en uundværlig del af den moderne industris maskinrum."></Div1>
+
+<div class="wrapper">
+        <div class="text">
+          <img class="logo" src="/neg_logo.webp" alt="NEG logo" />
+          <p>Som industrioperatør er du med til at sikre, at komplekse produktionslinjer kører præcist og effektivt. </p>
+          <br>
+          <p>Du lærer at betjene og overvåge avancerede maskiner, fejlsøge og vedligeholde udstyr og sikre, at kvalitet og sikkerhed er i top. På NEG Kalundborg får du en kombination af undervisning og praktik, hvor du får lov at prøve kræfter med den virkelige industriverden og opbygge stærke faglige kompetencer.</p>
+          <br>
+          <p>Uddannelsen er oplagt til dig, der er teknisk nysgerrig, kan lide at arbejde systematisk og ønsker at være en del af et miljø med højt tempo og stor betydning. Industrioperatører er efterspurgte i mange brancher – og du har mulighed for at bygge videre med kurser eller videreuddannelser, når du er klar.</p>
+          <br>
+          <p>Kort sagt: en teknisk og alsidig uddannelse, hvor du får styr på industriens maskineri – og din fremtid</p>
+        </div>
+        <img src="/Eletriker_dreng.webp" alt="industrioperatør" />
+      </div>
 
 <Legat>
     </main>
@@ -34,3 +50,55 @@ import Navigation from "../components/navigation.astro"
     </footer>
   </body>
 </html>
+
+<style>
+    .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .wrapper > img { width: 50%; }
+  .text {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+</style>

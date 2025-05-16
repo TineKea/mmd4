@@ -7,12 +7,14 @@ import Navigation from "../components/navigation.astro"
 ---
 <html lang="da">
    <meta charset="utf-8" />
-  <head><title>EUD Elektriker</title>
+  <head>
+    <title>EUD Processoperatør | NEG</title>
   <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
     </head>
+
   <body>
     <header>
       <Navigation>
@@ -21,10 +23,24 @@ import Navigation from "../components/navigation.astro"
     
     <main>
       
-<Hero src="/Eletriker_hero.webp" alt="Elektriker på arbejde" />
+<Hero src="/Eletriker_hero.webp" alt="Processoperatør på arbejde" />
 
 
-      <Div1 overskrift="Bliv tømrer" underrubrik=" Kan du lide at bruge hænderne, løse opgaver og se resultaterne af dit arbejde med det samme? Som elektriker arbejder du med strøm, installationer og smarte løsninger, der gør en forskel i hverdagen og i fremtiden. På NEG Kalundborg får du en praktisk uddannelse med masser af muligheder. Du lærer både det tekniske og det kreative – og du kommer hurtigt ud i virkelige virksomheder, hvor du får erfaring og netværk. Elektrikeruddannelsen er perfekt for dig, der gerne vil hurtigt i gang med noget, der giver mening – og som åbner døre. Bagefter kan du vælge at gå direkte i job eller bygge videre med en specialisering eller videreuddannelse. Hos os får du et godt studiemiljø, dygtige undervisere og en uddannelse, der rykker. Klar til at tænde for din fremtid?"></Div1>
+      <Div1 overskrift="Bliv ekspert i flow og formler – tag kontrol som procesoperatør" underrubrik=" Er du klar til en fremtid, hvor kemi, teknik og præcision går hånd i hånd? På NEG Kalundborg kan du tage en erhvervsuddannelse som procesoperatør og blive en vigtig brik i produktionen af alt fra medicin til bæredygtige energiløsninger. Du lærer at styre industrielle processer, overvåge avancerede anlæg og sikre, at alt kører præcist og sikkert – hver gang. En uddannelse med både dybde og fremtid."></Div1>
+
+<div class="wrapper">
+        <div class="text">
+          <img class="logo" src="/neg_logo.webp" alt="NEG logo" />
+          <p>Som procesoperatør arbejder du midt i produktionen – dér hvor det hele sker.  </p>
+          <br>
+          <p>Du lærer at styre store anlæg, overvåge kemiske og fysiske processer, justere maskiner og sikre, at produktionen lever op til strenge krav om kvalitet, miljø og sikkerhed. På NEG Kalundborg kombineres undervisning og praktik, så du får både teoretisk viden og erfaring fra virkelige produktionsmiljøer – ofte i nogle af Danmarks mest avancerede industrivirksomheder.</p>
+          <br>
+          <p>Uddannelsen er perfekt til dig, der er nysgerrig på teknologi, kemi og industri – og som kan lide at have styr på detaljerne. Procesoperatører er i høj kurs, især i medicinal-, fødevare- og kemibranchen, og uddannelsen giver dig gode muligheder for job og videreuddannelse, hvis du vil bygge videre.</p>
+          <br>
+          <p>Kort sagt: en teknisk og kemisk stærk uddannelse, hvor du styrer processerne bag moderne industri.</p>
+        </div>
+        <img src="/Eletriker_dreng.webp" alt="industrioperatør" />
+      </div>
 
 <Legat>
     </main>
@@ -34,3 +50,55 @@ import Navigation from "../components/navigation.astro"
     </footer>
   </body>
 </html>
+
+<style>
+    .logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .wrapper > img { width: 50%; }
+  .text {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+import Navigation from '../components/navigation.astro';
+import Div1 from '../components/Div1.astro';
+import Div2 from '../components/Div2.astro'
+import Footer from '../components/Footer.astro';
+import Legat from '../components/Legat.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>MMD NEG kalundborg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <Navigation>
+      </Navigation>
+    </header>
+
+    <main>
+      
+
+<Hero src="/index_hero.webp" alt="Smilende elever på NEG Kalundborg" />
+
+
+      <Div1 overskrift="NEG kalundborg" underrubrik="NEG Kalundborg er en moderne erhvervsskole med fokus på praksisnær undervisning og stærke erhvervssamarbejder. Her uddannes fremtidens faglærte inden for blandt andet teknologi, industri og byggeri. Skolen tilbyder et inspirerende læringsmiljø med plads til både faglig og personlig udvikling. Vi bygger bro mellem uddannelse og arbejdsmarked – til gavn for både elever og erhvervsliv."></Div1>
+
+      <Div2 titel="Mere end bare en skole – et sted du har lyst til at være" 
+      afsnit1="På NEG Kalundborg gør vi en dyd ud af at være mere end bare en skole. Vi er et fagligt og socialt fællesskab, hvor undervisning, trivsel og praksis går hånd i hånd. Uanset hvilken retning du vælger, møder du engagerede undervisere, der brænder for deres fag – og for at give dig undervisning, der giver mening. Vi tror på, at læring bedst sker, når du både forstår det i hovedet og mærker det i hænderne." afsnit2="Vores lærere er ikke bare dygtige fagpersoner – de er også mennesker, der tager sig tid til at se dig og skabe undervisning, der motiverer. Med en god portion humor, klare forventninger og et oprigtigt ønske om at hjælpe dig frem, gør de hverdagen levende og lærerig." afsnit3="Trivsel er ikke bare noget, vi taler om – det er noget, vi aktivt arbejder med. Vi lægger vægt på fællesskab, tryghed og en positiv atmosfære, hvor du kan være dig selv og udvikle dig i dit eget tempo. Hos os er det vigtigt, at du både lærer noget – og har det godt imens." 
+      afsnit4="Sidst, men ikke mindst, har vi et stort fokus på det praktiske arbejde. Du kommer ikke bare til at høre om det, du skal kunne – du kommer til at prøve det af. Vi sørger for, at undervisningen er tæt på virkeligheden og giver dig de færdigheder, du skal bruge, når du træder ud på arbejdsmarkedet eller videre i uddannelse. NEG Kalundborg er for dig, der vil tage din fremtid alvorligt – og stadig have det godt undervejs."></Div2>
+
+      <Legat></Legat>
+    </main>
+
+    <footer><Footer /></footer>
+  </body>
+</html>

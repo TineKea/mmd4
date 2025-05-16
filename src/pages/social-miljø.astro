@@ -1,0 +1,54 @@
+---
+import Navigation from '../components/navigation.astro';
+import Div1 from '../components/Div1.astro';
+import Div2 from '../components/Div2.astro'
+import Footer from '../components/Footer.astro';
+import Legat from '../components/Legat.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>MMD NEG kalundborg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <Navigation>
+      </Navigation>
+    </header>
+
+    <main>
+      
+
+<Hero src="/index_hero.webp" alt="Smilende elever på NEG Kalundborg" />
+
+
+      <Div1 overskrift="NEG kalundborg" underrubrik="NEG Kalundborg er en moderne erhvervsskole med fokus på praksisnær undervisning og stærke erhvervssamarbejder. Her uddannes fremtidens faglærte inden for blandt andet teknologi, industri og byggeri. Skolen tilbyder et inspirerende læringsmiljø med plads til både faglig og personlig udvikling. Vi bygger bro mellem uddannelse og arbejdsmarked – til gavn for både elever og erhvervsliv."></Div1>
+
+      <Div2 titel="Fællesskab der løfter – oplev det sociale liv på NEG" 
+      afsnit1="På NEG Kalundborg lægger vi stor vægt på det sociale fællesskab og det gode studiemiljø. Som elev bliver du en del af et aktivt og inkluderende miljø, hvor der løbende arrangeres aktiviteter, der styrker fællesskab og trivsel på tværs af uddannelser og afdelinger. Vores engagerede elever og udvalg planlægger en bred vifte af arrangementer – lige fra brætspilsaftener, LAN-parties og filmhygge til boldturneringer, idrætsdage og konkurrencer mellem klasser. Fredagscaféerne er et fast indslag, hvor elever mødes i afslappede rammer med musik, snak og drikkevarer – en oplagt mulighed for at lære nye mennesker at kende." 
+      afsnit2="Fester er også en naturlig del af elevlivet på NEG Kalundborg. Der afholdes løbende elevfester med god stemning og høj deltagerglæde. Festudvalget står for at skabe trygge og festlige rammer, og til de større fester sørger skolens eventlærer, lærere og professionelle vagter for, at alt forløber sikkert og ansvarligt. For elever på EUD, EUX og K10 byder året desuden på gallafest – en særlig aften med højtidelig stemning, festlig påklædning og stærkt fællesskab. På HTX og HHX deltager eleverne i den årlige ''Stor'' Fest, som afholdes med Kalundborg Gymnasium og altid har et kreativt tema." 
+      afsnit3="Udover de mange aktiviteter på skolen bliver undervisningen også løbende suppleret med ekskursioner og studieture. Her kombineres fagligt indhold med oplevelser og fællesskab, og turene giver eleverne mulighed for at møde både erhvervsliv og kultur i nye omgivelser. Uanset om destinationen er Danmark eller udlandet, styrker studieturene sammenholdet og giver perspektiv på uddannelsen." 
+      afsnit4="Det sociale miljø på NEG Kalundborg er med til at gøre skoledagen både spændende og meningsfuld – og vi tror på, at gode relationer og fælles oplevelser styrker både trivsel og læring."></Div2>
+
+
+      
+
+
+
+
+
+
+      <Legat></Legat>
+    </main>
+
+    <footer><Footer /></footer>
+  </body>
+</html>
