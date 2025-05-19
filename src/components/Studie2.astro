@@ -1,0 +1,44 @@
+---
+const { tekst } = Astro.props;
+---
+
+<div class="container">
+  <img src="/3-3.info.webp" alt="infografik" class="image" />
+  <div class="tekst">
+    <p>{tekst}</p>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .tekst {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    max-width: 700px;
+  }
+
+  @media (max-width: 480px) {
+    .tekst {
+      font-size: 1.2rem;
+      padding: 0 1rem;
+    }
+  }
+</style>
+

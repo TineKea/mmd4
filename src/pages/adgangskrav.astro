@@ -1,0 +1,150 @@
+---
+import Navigation from '../components/navigation.astro';
+import Div1 from '../components/Div1.astro';
+import Div2 from '../components/Div2.astro'
+import Footer from '../components/Footer.astro';
+import Legat from '../components/Legat.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>MMD NEG kalundborg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <Navigation>
+      </Navigation>
+    </header>
+
+    <main>
+      
+
+<Hero src="/index_hero.webp" alt="Smilende elever på NEG Kalundborg" />
+
+
+      <Div2 titel="Adgangskrav på NEG Kalundborg – din vej til fremtiden" 
+      afsnit1="Hos NEG Kalundborg hjælper vi dig godt i gang med en erhvervsuddannelse, uanset om du drømmer om at blive elektriker, tømrer, procesoperatør, lagerarbejder eller noget helt andet. Vi tilbyder både EUX – hvor du kombinerer faglig uddannelse med gymnasiale fag – og EUD, den klassiske erhvervsuddannelse med fokus på praksis og fagligt håndværk." 
+      afsnit2="Hvis du ikke opfylder kravene, har du stadig mulighed for at blive optaget via en optagelsesprøve og samtale – vi ser på dine evner og motivation, ikke kun karakterer. Har du allerede en læreplads, får du direkte adgang til uddannelsen."
+      asnit3="En erhvervsuddannelse er en solid, fleksibel og eftertragtet vej videre – og hos NEG Kalundborg får du en stærk start. Uanset om du vil bygge, installere, producere eller planlægge, er der plads til dig og dine ambitioner hos os."
+      afsnit4="Vi glæder os til at møde dig!"></Div2>
+ 
+
+      
+
+<div class="layout">
+    <div class="section">
+          <h2>Adgangskrav til alle EUX-uddannelser</h2>
+          <p>EUX er en uddannelse, der kombinerer en erhvervsuddannelse med en gymnasial eksamen. Det betyder, at du både får praktiske færdigheder og en studentereksamen, som giver adgang til videregående uddannelser. EUX er for dig, der vil have det bedste fra begge verdener – hænderne i faget og hovedet med i bogen.</p>
+          <ul>
+            <li>Mindst 02 i gennemsnit i både Dansk og Matematik fra 9. eller 10. klasses afgangsprøve.</li>
+                <li>Vurderet uddannelsesparat</li>
+                <li>Alternativt: optagelsesprøve og samtale, hvis adgangskrav ikke er opfyldt</li>
+                <li>Direkte adgang med læreplads</li>
+          </ul>
+    </div>
+    <br>
+    <div class="section">
+          <h2>Adgangskrav til alle EUD-uddannelser</h2>
+          <p>EUD er en erhvervsuddannelse, hvor du lærer et fag fra bunden og bliver klar til at arbejde direkte efter endt uddannelse. Du får praktisk erfaring kombineret med teori, og størstedelen af uddannelsen foregår i virkelige virksomheder gennem praktik. EUD er for dig, der vil hurtigt i job og trives med at lære ved at gøre.</p>
+          <ul>
+            <li>Mindst 02 i gennemsnit i både Dansk og Matematik fra 9. eller 10. klasses afgangsprøve</li>
+                <li>Vurderet uddannelsesparat</li>
+                <li>Alternativt: optagelsesprøve og samtale, hvis adgangskrav ikke er opfyldt</li>
+                <li>Direkte adgang med læreplads</li>
+          </ul>
+     </div>
+</div>
+
+
+<Div2 
+afsnit1="Efter grundforløbet skal du bestå forskellige fag og prøver, som er specifikke for den uddannelse, du vælger. Du vil bl.a. møde fag som:"
+afsnit2="Dansk, matematik, teknologi og naturfag – på niveauer tilpasset din retning. Certifikatfag og praktiske prøver inden for dit fagområde."
+afsnit3="På EUX også gymnasiale fag på C-niveau som engelsk, samfundsfag og fysik" 
+afsnit4="Hos NEG Kalundborg står vores studievejledere klar til at hjælpe dig med at finde den rette vej og besvare dine spørgsmål – uanset om du er helt afklaret eller stadig i tvivl. Vi tager os tid til at lære dig at kende og finde den løsning, der passer til dig. ">
+</Div2>
+
+      <Div2
+  titel="Generel information om studiekrav"
+  afsnit1='Ansøgning via <a href="https://www.optagelse.dk" target="_blank" rel="noopener noreferrer">optagelse.dk</a> senest 1. marts kl. 12.00'
+  afsnit2="Du må maksimalt starte på en erhvervsuddannelse 3 gange. Du er altid velkommen til at kontakte vores studievejledning, hvor vi vil hjælpe dig videre."
+  afsnit3="Adgangskrav og optagelse varierer for de forskellige uddannelser. Gå ind under hver uddannelse og læs mere om adgangskrav."
+/>
+
+
+      <Legat></Legat>
+    </main>
+
+    <footer><Footer /></footer>
+  </body>
+</html>
+
+<style>
+    .layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.section {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+.section h2 { text-align: center; }
+.section p { text-align: left; }
+.divider { width: 50px; height: 100px; }
+
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+  }
+  .section { width: 30%; margin-bottom: 0; padding: 0; }
+  .divider { width: 2px; height: auto; background-color: #ccc; }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  border-radius: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 5%;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  align-items: center;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .text, .section p {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+</style>

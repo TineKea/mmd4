@@ -1,14 +1,17 @@
 ---
-const {titel, afsnit1, afsnit2, afsnit3} = Astro.props;
+const {titel, afsnit1, afsnit2, afsnit3, afsnit4} = Astro.props;
 ---
+
 
 
 <div class="hero_text_container">
     <h1>{titel}</h1>
-    <p>{afsnit1}</p>
-    <p>{afsnit2}</p>
-    <p>{afsnit3}</p>
+    <p set:html={afsnit1} />
+<p>{afsnit2}</p>
+<p>{afsnit3}</p>
+<p>{afsnit4}</p>
 </div>
+
 
 <style>
 .hero_text_container {
@@ -55,4 +58,6 @@ const {titel, afsnit1, afsnit2, afsnit3} = Astro.props;
   margin: 0 auto;
   max-width: 800px;
 }
+
+
 </style>

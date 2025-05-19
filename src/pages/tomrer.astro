@@ -4,6 +4,7 @@ import Div1 from "../components/Div1.astro"
 import Legat from "../components/Legat.astro"
 import Hero from "../components/Hero.astro"
 import Navigation from "../components/navigation.astro"
+import Studie2 from "../components/Studie1.astro"
 ---
 <html lang="da">
    <meta charset="utf-8" />
@@ -21,7 +22,7 @@ import Navigation from "../components/navigation.astro"
     
     <main>
       
-<Hero src="/Eletriker_hero.webp" alt="Elektriker på arbejde" />
+<Hero src="/toemrer.webp" alt="Elektriker på arbejde" />
 
 
       <Div1 overskrift="Vil du bygge med mening? Bliv tømrer" underrubrik= "Drømmer du om at bygge noget, der holder i mange år? Tømreruddannelsen på EUD-niveau er for dig, der vil arbejde med hænderne, bruge værktøj og skabe bygninger, der giver mening. Du lærer at arbejde med træ, konstruktioner, tage, vægge og meget mere – både med klassiske teknikker og moderne metoder. Uddannelsen varer omkring 4 år og veksler mellem skole og praktik, hvor du får erfaring og løn. Som tømrer får du et solidt håndværk, stærke jobmuligheder og en uddannelse, du altid kan bygge videre på."></Div1>
@@ -37,8 +38,12 @@ import Navigation from "../components/navigation.astro"
           <br>
             <p>Tømreruddannelsen giver dig ikke kun praktiske færdigheder, men også en stabil og fremtidssikret karriere med masser af muligheder for både udvikling og jobmuligheder.</p>
         </div>
-        <img src="/guys_smilling.webp" alt="Billede af studerende" />
+        <img src="/toermer_dreng.webp" alt="Billede af studerende" />
       </div>
+
+<Studie2 tekst="Tømreruddannelsen er bygget op i et skifte mellem skole og praktik. Undervejs er du i praktik tre gange, hvor du arbejder ude i en virksomhed og bliver en del af det daglige arbejde på byggepladsen. Her lærer du at bruge værktøj og materialer i praksis og får erfaring med rigtige opgaver. Mellem praktikperioderne er du på skole tre gange, hvor du dykker ned i faglig viden, lærer nye teknikker og får styr på byggetegninger, konstruktion og sikkerhed. Det er en uddannelse, hvor du lærer gennem både hænder og hoved.">
+</Studie2>
+
 
 <Legat>
     </main>
@@ -92,7 +97,8 @@ import Navigation from "../components/navigation.astro"
     align-items: center;
     gap: 40px;
   }
-  .wrapper > img { width: 50%; }
+  .wrapper > img { width: 50%;
+  max-height: fit-content; }
   .text {
     width: 50%;
     align-items: flex-start;

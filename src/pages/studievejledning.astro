@@ -1,0 +1,231 @@
+---
+import Navigation from '../components/navigation.astro';
+import Div1 from '../components/Div1.astro';
+import Footer from '../components/Footer.astro';
+import Legat from '../components/Legat.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>MMD NEG kalundborg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <Navigation>
+      </Navigation>
+    </header>
+
+    <main>
+      
+
+<Hero src="/index_hero.webp" alt="Smilende elever på NEG Kalundborg" />
+
+
+      <Div1 overskrift="VI HJÆLPER DIG MED SPØRGSMÅL OM OPTAGELSE, STUDIE OG STØTTE" underrubrik="I studievejledningen får du hjælp til optagelse, valg af studie/studieretning og støttemuligheder. Studievejlederne kan også hjælpe dig med at søge støtte til eksempelvis SPS, mentor, SU eller lignende. Hvis du er under 25 år, kan du via studievejlederne blive henvist til psykologhjælp."></Div1>
+
+    
+
+ <div class="contact-grid">
+  <div class="contact-card">
+    <h3>Henning Nyegaard Holm</h3>
+    <p>Studievejleder</p>
+    <p>HHX & HTX</p>
+    <p><a href="mailto:henh@neg.dk">henh@neg.dk</a></p>
+  </div>
+
+  <div class="contact-card">
+    <h3>Jonas Andersen-Silvestri</h3>
+    <p>Studievejleder</p>
+    <p>HHX & HTX</p>
+    <p><a href="tel:+4572290506">+45 72 290 506</a></p>
+    <p><a href="mailto:jasi@neg.dk">jasi@neg.dk</a></p>
+  </div>
+
+  <div class="contact-card">
+    <h3>Kamilla Schmidt Riise</h3>
+    <p>Studievejleder</p>
+    <p>EUD/EUX Business og 10. klasse</p>
+    <p><a href="tel:+4572290502">+45 72 290 502</a></p>
+    <p><a href="mailto:kaje@neg.dk">kaje@neg.dk</a></p>
+  </div>
+
+  <div class="contact-card">
+    <h3>Michael Gransøe</h3>
+    <p>Studievejleder</p>
+    <p>EUD/EUX Teknisk og Proces og AMU</p>
+    <p><a href="tel:+4572290422">+45 72 290 422</a></p>
+    <p><a href="mailto:mig@neg.dk">mig@neg.dk</a></p>
+  </div>
+</div>
+
+<div class="faq-container">
+    <div class="faq-box">
+      <div class="faq-header">
+        <h2>SPS - Social pædagogisk støtte</h2>
+        <button onclick="toggleBox(0)" id="toggle-0">+</button>
+      </div>
+      <div class="faq-content" id="content-0">
+        <p>Vi hjælper dig med at få adgang til it-hjælpemidler, hvis du har svært ved at læse eller er ordblind. Du får adgang til programmer, der kan støtte dig i undervisningen og gøre din tid hos os lettere. Hvis du ikke allerede er testet for ordblindhed, så hjælper vi med dette.</p>
+        <p>Du kan også få hjælp til at søge støtte til et hæve-sænkebord og/eller speciel stol, hvis du har fysiske problemer, der gør det nødvendigt at kunne indtage forskellige arbejdsstillinger i løbet af dagen.</p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-header">
+        <h2>Psykologhjælp og mentorordning</h2>
+        <button onclick="toggleBox(1)" id="toggle-1">+</button>
+      </div>
+      <div class="faq-content" id="content-1">
+        <p>Uanset om du har brug for hjælp til dine lektier, at få din hverdag til at hænge sammen eller oplever psykiske, sociale eller følelsesmæssige udfordringer eller problemer, kan vi hjælpe dig. Kig ind til en snak. Vi har tavshedspligt.</p>
+      </div>
+    </div>
+
+    <div class="faq-box">
+      <div class="faq-header">
+        <h2>Studieaktivitet og eventuelt studiestop</h2>
+        <button onclick="toggleBox(2)" id="toggle-2">+</button>
+      </div>
+      <div class="faq-content" id="content-2">
+        <p>På alle ungdomsuddannelser er der mødepligt og pligt til at aflevere skriftlige opgaver. Hvis du får problemer eller kommer bagud med afleveringer, så kom til os så vi i fællesskab kan finde en løsning.</p>
+        <p>Hvis du på et tidspunkt overvejer at stoppe på uddannelsen, skal du kontakte en studievejleder. Studievejlederen kan hjælpe dig videre med et eventuelt nyt studie, formidle kontakten til Ung og Uddannelse eller hjælpe med at fastholde dig i den uddannelse, som du er i gang med.</p>
+      </div>
+    </div>
+
+
+      <Legat></Legat>
+    </main>
+
+    <footer><Footer /></footer>
+    <script>
+  window.toggleBox = function(index) {
+    const content = document.getElementById(`content-${index}`);
+    const toggleBtn = document.getElementById(`toggle-${index}`);
+    const box = content.closest(".faq-box");
+    const isOpen = box.classList.contains("open");
+
+    if (isOpen) {
+      box.classList.remove("open");
+      toggleBtn.textContent = "+";
+    } else {
+      box.classList.add("open");
+      toggleBtn.textContent = "–";
+    }
+  }
+</script>
+  </body>
+</html>
+
+<style>
+
+    .faq-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-box {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 1rem;
+      background-color: #f3ece6;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .faq-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .faq-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #081b49;
+    }
+
+    .faq-header button {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .faq-content {
+      display: none;
+      margin-top: 1rem;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .faq-content p {
+      color: #081b49;
+    }
+
+    .faq-box.open .faq-content {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .faq-header h2 {
+        font-size: 1rem;
+      }
+    }
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .contact-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .contact-card h3 {
+    margin-top: 0;
+  }
+
+  .contact-card p {
+    margin: 0.3rem 0;
+  }
+
+  .contact-card a {
+    color: #EC8113;
+    text-decoration: none;
+  }
+
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+   
+
+</style>

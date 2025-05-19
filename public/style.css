@@ -28,36 +28,36 @@ a {
   font-weight: regular;
   font-style: medium;
 }
- 
 
 hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 90vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  hero {
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    height: auto;
+    object-fit: contain;
   }
+}
 
-  @media (max-width: 767px) {
-    hero {
-      height: auto;
-      aspect-ratio: 16 / 9; 
-    }
-
-    hero img {
-      height: auto;
-      object-fit: contain;
-    }
-  }
-
-</style>
-
+li {
+  color: #f3ece6;
+}
