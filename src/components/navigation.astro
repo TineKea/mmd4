@@ -2,25 +2,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Space Grotesk', sans-serif; margin-top: 60px; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: fixed; top: 0; width: 100%; background: transparent; z-index: 1000; }
-    .nav-section { display: flex; align-items: center; }
-    .socials { display: flex; gap: 20px; }
-    .socials img, .burger { height: 30px; cursor: pointer; }
-    .logo { height: 50px; }
-    .burger.hidden { display: none; }
-    .menu-slide { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem; z-index: 1000; border-radius: 8px; width: 260px; max-height: 80vh; overflow-y: auto; flex-direction: column; gap: 1rem; }
-    .menu-slide.open { display: flex; }
-    .close-btn { align-self: flex-end; font-size: 1.3rem; font-weight: bold; background: none; border: none; cursor: pointer; margin-bottom: 0.5rem; }
-    .menu-item { font-weight: 500; cursor: pointer; }
-    .submenu { display: none; margin-left: 1rem; flex-direction: column; }
-    .submenu a { color: #EC8113; padding: 4px 0; text-decoration: none; }
-    .submenu a:hover { text-decoration: underline; }
-    .submenu.open { display: flex; }
-    @media (max-width: 768px) { .socials { display: none; } }
-  </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const burger = document.querySelector('.burger'), menu = document.querySelector('.menu-slide'), closeBtn = document.querySelector('.close-btn');
@@ -94,3 +75,23 @@
   </div>
 </body>
 </html>
+
+ <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Space Grotesk', sans-serif; margin-top: 60px; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; position: fixed; top: 0; width: 100%; background: transparent; z-index: 1000; }
+    .nav-section { display: flex; align-items: center; }
+    .socials { display: flex; gap: 20px; }
+    .socials img, .burger { height: 30px; cursor: pointer; }
+    .logo { height: 50px; }
+    .burger.hidden { display: none; }
+    .menu-slide { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; padding: 2rem; z-index: 1000; border-radius: 8px; width: 260px; max-height: 80vh; overflow-y: auto; flex-direction: column; gap: 1rem; }
+    .menu-slide.open { display: flex; }
+    .close-btn { align-self: flex-end; font-size: 1.3rem; font-weight: bold; background: none; border: none; cursor: pointer; margin-bottom: 0.5rem; }
+    .menu-item { font-weight: 500; cursor: pointer; }
+    .submenu { display: none; margin-left: 1rem; flex-direction: column; }
+    .submenu a { color: #EC8113; padding: 4px 0; text-decoration: none; }
+    .submenu a:hover { text-decoration: underline; }
+    .submenu.open { display: flex; }
+    @media (max-width: 768px) { .socials { display: none; } }
+  </style>
